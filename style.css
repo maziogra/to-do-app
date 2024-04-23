@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+	margin: 0;
+	font-family: "Outfit", sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#task_input {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-top: 15px;
+}
+
+#task_input > input {
+	border: none; 
+	border-radius: 10px;
+	box-shadow: 0 0 8px #adaba3;
+	padding: 12px;
+	width: 30vw;
+	height: 20px;
+}
+
+#task_input > button {
+	box-shadow: 0 0 8px #adaba3;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 20px 12px 20px;
+	transition: linear .4s;
+}
+
+#task_input > button:hover {
+	box-shadow: 0 0 4px #adaba3;
+	cursor: pointer;
+	transition: linear .4s;
+}
