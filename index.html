@@ -1,17 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>TO DO APP</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div id="task_input">
-      <input type="text" />
-      <button onclick="createTask()">SAVE</button>
-      <button class="hidden cancel" onclick="cancel()">CANCEL</button>
-    </div>
-    <div id="tasks"></div>
-    <script src="main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>TO DO APP</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div class="background">
+			<div id="task_input">
+				<input
+					type="text"
+					placeholder="Insert your task"
+				/>
+				<button onclick="createTask()">SAVE</button>
+				<button
+					class="hidden cancel"
+					onclick="cancel()"
+				>
+					CANCEL
+				</button>
+			</div>
+			<div id="tasks"></div>
+			<div class="clear">
+				<button class="cancel" onclick="clearTasks()">
+					CLEAR
+				</button>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
 </html>

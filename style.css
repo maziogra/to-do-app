@@ -4,13 +4,16 @@
 	margin: 0;
 	font-family: "Outfit", sans-serif;
 }
-
-body {
+ 
+.background {
 	background-color: #fa8bff;
-	background-image: linear-gradient(45deg,
-			#fa8bff 0%,
-			#2bd2ff 52%,
-			#2bff88 90%);
+	background-image: linear-gradient(
+		45deg,
+		#fa8bff 0%,
+		#2bd2ff 52%,
+		#2bff88 90%
+	);
+	height: 100vh;
 }
 
 textarea:focus,
@@ -21,13 +24,13 @@ input:focus {
 #task_input {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	margin-top: 15px;
+	padding-top: 15px;
 }
 
-#task_input>input {
+#task_input > input {
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0 0 8px #adaba3;
@@ -36,15 +39,20 @@ input:focus {
 	height: 20px;
 }
 
-#task_input>button {
+#task_input > input::placeholder {
+	opacity: 50%;
+}
+
+button {
 	box-shadow: 0 0 8px #adaba3;
+	font-weight: 800;
 	border: none;
 	border-radius: 10px;
 	padding: 12px 20px 12px 20px;
 	transition: linear 0.4s;
 }
 
-#task_input>button:hover {
+button:hover {
 	box-shadow: 0 0 4px #adaba3;
 	cursor: pointer;
 	transition: linear 0.4s;
@@ -53,7 +61,7 @@ input:focus {
 #tasks {
 	margin-top: 60px;
 	overflow: auto;
-	height: 82vh;
+	height: 75vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -72,13 +80,13 @@ input:focus {
 	margin-bottom: 5px;
 }
 
-.task>div {
+.task > div {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.task>.options {
+.task > .options {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -95,3 +103,10 @@ input:focus {
 .cancel {
 	background-color: red;
 }
+
+.clear {
+	padding-top: 10px; 	
+	display: flex;
+	justify-content: center;
+}
+
