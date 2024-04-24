@@ -60,9 +60,17 @@ let clearTasks = () => {
 	let check = prompt("Type YES to confirm");
 	if(check === "YES"){
 		tasks = [];
+		localStorage.setItem("data", JSON.stringify(tasks));
 		refresh();
 	}
 }
+
+document.addEventListener("keyup", (event) => {
+	const key = event.key;
+	if(key === "Enter"){
+		createTask();
+	} 
+});
 
 tasks = JSON.parse(localStorage.getItem("data")) || [];
 refresh();
