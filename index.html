@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>TO DO APP</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
-	<body>
-		<div id="task_input">
-			<input type="text" />
-			<button onclick="createTask()">SAVE</button>
-		</div>
-		<div id="tasks">
-		</div>
-		<script src="main.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TO DO APP</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="task_input">
+      <input type="text" />
+      <button onclick="createTask()">SAVE</button>
+      <button class="hidden cancel" onclick="cancel()">CANCEL</button>
+    </div>
+    <div id="tasks"></div>
+    <script src="main.js"></script>
+  </body>
 </html>
