@@ -36,7 +36,7 @@ let refresh = (x) => {
 let deleteTask = (x) => {
   tasks.splice(x.parentElement.parentElement.id, 1);
   localStorage.setItem("data", JSON.stringify(tasks));
-  x.parentElement.parentElement.remove();
+  refresh();
 };
 
 let modifyTask = (x) => {
