@@ -2,7 +2,7 @@ let tasks = [];
 let temp;
 
 $(document).ready(() => {
-  $("#task_input > button").click(() => {
+  $("#task_input > button#save_modify").click(() => {
     createTask();
   });
 
@@ -30,8 +30,8 @@ $(document).ready(() => {
   });
 
   let createTask = () => {
-    $("#task_input > button").text("SAVE");
-    $("task_input > button.cancel").hide();
+    $("#task_input > button#save_modify").text("SAVE");
+    $("#task_input > button.cancel").hide();
     if ($("#task_input > input").val() === "") {
       alert("Task is empty");
     } else {
@@ -64,15 +64,15 @@ $(document).ready(() => {
 
   let modifyTask = (x) => {
     $("#task_input > input").val(tasks[x.parentElement.parentElement.id]);
-    $("#task_input > button").text("MODIFY");
-    $("task_input > button.cancel").show();
+    $("#task_input > button#save_modify").text("MODIFY");
+    $("#task_input > button.cancel").show();
     $("#tasks").html("<h1>CLICK CANCEL TO CONTINUE</h1>");
     temp = tasks[x.parentElement.parentElement.id];
     tasks.splice(x.parentElement.parentElement.id, 1);
   };
 
   let cancel = () => {
-    $("#task_input > button").text("SAVE");
+    $("#task_input > button#save_modify").text("SAVE");
     $("#task_input > input").val("");
     $("#task_input > button.cancel").hide();
     tasks.push(temp);

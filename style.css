@@ -94,10 +94,6 @@ button:hover {
 	margin-left: 50px;
 }
 
-.hidden {
-	display: none;
-}
-
 .cancel {
 	background-color: red;
 }
