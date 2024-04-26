@@ -1,32 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>TO DO APP</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
-	<body>
-		<div class="background">
-			<div id="task_input">
-				<input
-					type="text"
-					placeholder="Insert your task"
-				/>
-				<button onclick="createTask()">SAVE</button>
-				<button
-					class="hidden cancel"
-					onclick="cancel()"
-				>
-					CANCEL
-				</button>
-			</div>
-			<div id="tasks"></div>
-			<div class="clear">
-				<button class="cancel" onclick="clearTasks()">
-					CLEAR
-				</button>
-			</div>
-		</div>
-		<script src="main.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TO DO APP</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div id="task_input">
+        <input type="text" placeholder="Insert your task" />
+        <button>SAVE</button>
+        <button class="hidden cancel">CANCEL</button>
+      </div>
+      <div id="tasks"></div>
+      <div class="clear">
+        <button class="cancel"">CLEAR</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
