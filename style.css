@@ -4,15 +4,13 @@
 	margin: 0;
 	font-family: "Outfit", sans-serif;
 }
- 
+
 .background {
 	background-color: #fa8bff;
-	background-image: linear-gradient(
-		45deg,
-		#fa8bff 0%,
-		#2bd2ff 52%,
-		#2bff88 90%
-	);
+	background-image: linear-gradient(45deg,
+			#fa8bff 0%,
+			#2bd2ff 52%,
+			#2bff88 90%);
 	height: 100vh;
 }
 
@@ -30,7 +28,7 @@ input:focus {
 	padding-top: 15px;
 }
 
-#task_input > input {
+#task_input>input {
 	border: none;
 	border-radius: 10px;
 	box-shadow: 0 0 8px #adaba3;
@@ -39,7 +37,7 @@ input:focus {
 	height: 20px;
 }
 
-#task_input > input::placeholder {
+#task_input>input::placeholder {
 	opacity: 50%;
 }
 
@@ -80,13 +78,13 @@ button:hover {
 	margin-bottom: 5px;
 }
 
-.task > div {
+.task>div {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.task > .options {
+.task>.options {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -105,8 +103,7 @@ button:hover {
 }
 
 .clear {
-	padding-top: 10px; 	
+	padding-top: 10px;
 	display: flex;
 	justify-content: center;
 }
-
